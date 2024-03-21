@@ -94,10 +94,10 @@ $newArticles = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <a href="admin_dashboard.php">Admin Dashboard</a>
             <?php endif; ?>
             <?php if (has_role('admin')) : ?>
-                <li><a href="administrator/manage_user.php">Manage User</a></li>
+                <a href="administrator/manage_user.php">Manage User</a>
             <?php endif; ?>
             <?php if (has_role('admin')) : ?>
-                <li><a href="administrator/manage_closure_dates.php">Manage Closure Dates</a></li>
+                <a href="administrator/manage_closure_dates.php">Manage Closure Dates</a>
             <?php endif; ?>
             <?php if (has_role('admin')) : ?>
                 <li><a href="administrator/manage_faculty.php">Manage Faculty</a></li>
@@ -106,7 +106,7 @@ $newArticles = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li><a href="marketing_coordinator/coordinator_dashboard.php">Coordinator Dashboard</a></li>
             <?php endif; ?>
             <?php if (has_role('student')) : ?>
-                <li><a href="student_dashboard.php">Student Dashboard</a></li>
+                <a href="student_dashboard.php">Student Dashboard</a>
             <?php endif; ?>
             <?php if (has_role('student')) : ?>
                 <li><a href="student/write_article.php">Write your article</a></li>
